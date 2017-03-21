@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C45230551E8125790084417F /* igalia_m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C45230541E8125790084417F /* igalia_m.jpg */; };
 		C4F7F6D11E780A3A00DD3A82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7F6D01E780A3A00DD3A82 /* AppDelegate.swift */; };
 		C4F7F6D31E780A3A00DD3A82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7F6D21E780A3A00DD3A82 /* ViewController.swift */; };
 		C4F7F6D61E780A3A00DD3A82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F7F6D41E780A3A00DD3A82 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C45230541E8125790084417F /* igalia_m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = igalia_m.jpg; path = Recursos/igalia_m.jpg; sourceTree = "<group>"; };
 		C4F7F6CD1E780A3A00DD3A82 /* ActividadEnClase1IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActividadEnClase1IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F7F6D01E780A3A00DD3A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F7F6D21E780A3A00DD3A82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		C4F7F6CF1E780A3A00DD3A82 /* ActividadEnClase1IOS */ = {
 			isa = PBXGroup;
 			children = (
+				C45230541E8125790084417F /* igalia_m.jpg */,
 				C4F7F6D01E780A3A00DD3A82 /* AppDelegate.swift */,
 				C4F7F6D21E780A3A00DD3A82 /* ViewController.swift */,
 				C4F7F6D41E780A3A00DD3A82 /* Main.storyboard */,
@@ -234,6 +237,7 @@
 			files = (
 				C4F7F6DB1E780A3A00DD3A82 /* LaunchScreen.storyboard in Resources */,
 				C4F7F6D81E780A3A00DD3A82 /* Assets.xcassets in Resources */,
+				C45230551E8125790084417F /* igalia_m.jpg in Resources */,
 				C4F7F6D61E780A3A00DD3A82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +507,7 @@
 				C4F7F6F71E780A3A00DD3A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4F7F6F81E780A3A00DD3A82 /* Build configuration list for PBXNativeTarget "ActividadEnClase1IOSTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				C4F7F6FA1E780A3A00DD3A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4F7F6FB1E780A3A00DD3A82 /* Build configuration list for PBXNativeTarget "ActividadEnClase1IOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				C4F7F6FD1E780A3A00DD3A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
