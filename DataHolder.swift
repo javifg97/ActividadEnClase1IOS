@@ -13,7 +13,9 @@ class DataHolder: NSObject {
     static let sharedInstance:DataHolder=DataHolder()
     
     
-    var sNomUser:String?=""
-    var sPass:String?=""
+    var sNomUser:String?="aaa"
+    var sPass:String?="aaa"
+    var arrNombresCelda:Array<String> = ["JAVI","YONY","CRIS","ALFRED","ESPRINGOLIATE"]
+    var arrImgCeldas:Array<UIImage> = [UIImage(named: "any1.jpeg")!, UIImage(named: "any2.jpeg")!, UIImage(named: "any3.jpeg")!, UIImage(named: "any4.jpeg")!, UIImage(named: "any5.jpeg")!]
         
 }

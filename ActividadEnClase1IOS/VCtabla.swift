@@ -25,13 +25,14 @@ class VCtabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return DataHolder.sharedInstance.arrNombresCelda.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:TVCMiCelda = tableView.dequeueReusableCell(withIdentifier: "miCelda1")as! TVCMiCelda
-        cell.lblNombre?.text = "Javi"
+        cell.lblNombre?.text = DataHolder.sharedInstance.arrNombresCelda[indexPath.row]
+        cell.imgPerfil?.image = DataHolder.sharedInstance.arrImgCeldas[indexPath.row]
         return cell
     }
     

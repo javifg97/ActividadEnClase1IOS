@@ -288,6 +288,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="imgPerfil" destination="h63-bj-Iuc" id="fJU-nK-BfD"/>
                                             <outlet property="lblNombre" destination="hqj-sf-lMb" id="JKO-9V-lbf"/>
                                         </connections>
                                     </tableViewCell>
