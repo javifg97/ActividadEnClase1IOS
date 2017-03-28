@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VCtabla: UIViewController {
+class VCtabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tbMiTable: UITableView?
 
@@ -21,6 +21,18 @@ class VCtabla: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:TVCMiCelda = tableView.dequeueReusableCell(withIdentifier: "miCelda1")as! TVCMiCelda
+        cell.lblNombre?.text = "Javi"
+        return cell
     }
     
 

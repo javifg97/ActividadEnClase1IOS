@@ -9,16 +9,17 @@
 /* Begin PBXBuildFile section */
 		79B4DD54892A1764D0DE6E85 /* Pods_ActividadEnClase1IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BE45C0708F58CDF1AC5E18 /* Pods_ActividadEnClase1IOS.framework */; };
 		BE63665B2D2768A915FBEE21 /* Pods_ActividadEnClase1IOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85B759506C7C72FDF2AADA1 /* Pods_ActividadEnClase1IOSUITests.framework */; };
-		C4000C011E898AF30040F9E0 /* any (1).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4000BFC1E898AF30040F9E0 /* any (1).jpeg */; };
-		C4000C021E898AF30040F9E0 /* any (2).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4000BFD1E898AF30040F9E0 /* any (2).jpeg */; };
-		C4000C031E898AF30040F9E0 /* any (3).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4000BFE1E898AF30040F9E0 /* any (3).jpeg */; };
-		C4000C041E898AF30040F9E0 /* any (4).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4000BFF1E898AF30040F9E0 /* any (4).jpeg */; };
-		C4000C051E898AF30040F9E0 /* any.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4000C001E898AF30040F9E0 /* any.jpeg */; };
 		C4000C081E898DFD0040F9E0 /* VCtabla.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4000C071E898DFD0040F9E0 /* VCtabla.swift */; };
 		C45230551E8125790084417F /* igalia_m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C45230541E8125790084417F /* igalia_m.jpg */; };
 		C4869FF51E81960000F2405E /* ViewControllerRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4869FF41E81960000F2405E /* ViewControllerRegistro.swift */; };
 		C4869FF81E8199A200F2405E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4869FF61E8199A200F2405E /* Main.storyboard */; };
 		C4869FFA1E81A23300F2405E /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4869FF91E81A23300F2405E /* DataHolder.swift */; };
+		C49AAFB21E8A5800000B4A6C /* TVCMiCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49AAFB11E8A5800000B4A6C /* TVCMiCelda.swift */; };
+		C4B9AA2D1E8A52430018B70B /* any1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4B9AA281E8A52430018B70B /* any1.jpeg */; };
+		C4B9AA2E1E8A52430018B70B /* any2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4B9AA291E8A52430018B70B /* any2.jpeg */; };
+		C4B9AA2F1E8A52430018B70B /* any3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4B9AA2A1E8A52430018B70B /* any3.jpeg */; };
+		C4B9AA301E8A52430018B70B /* any4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4B9AA2B1E8A52430018B70B /* any4.jpeg */; };
+		C4B9AA311E8A52430018B70B /* any5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4B9AA2C1E8A52430018B70B /* any5.jpeg */; };
 		C4F7F6D11E780A3A00DD3A82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7F6D01E780A3A00DD3A82 /* AppDelegate.swift */; };
 		C4F7F6D31E780A3A00DD3A82 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7F6D21E780A3A00DD3A82 /* ViewControllerLogin.swift */; };
 		C4F7F6D81E780A3A00DD3A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F7F6D71E780A3A00DD3A82 /* Assets.xcassets */; };
@@ -52,16 +53,17 @@
 		32BE45C0708F58CDF1AC5E18 /* Pods_ActividadEnClase1IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActividadEnClase1IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6096D921E752AE002C483D60 /* Pods-ActividadEnClase1IOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActividadEnClase1IOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActividadEnClase1IOSUITests/Pods-ActividadEnClase1IOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		857104F05CB510824CD15285 /* Pods-ActividadEnClase1IOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActividadEnClase1IOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActividadEnClase1IOSTests/Pods-ActividadEnClase1IOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		C4000BFC1E898AF30040F9E0 /* any (1).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "any (1).jpeg"; path = "Recursos/any (1).jpeg"; sourceTree = "<group>"; };
-		C4000BFD1E898AF30040F9E0 /* any (2).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "any (2).jpeg"; path = "Recursos/any (2).jpeg"; sourceTree = "<group>"; };
-		C4000BFE1E898AF30040F9E0 /* any (3).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "any (3).jpeg"; path = "Recursos/any (3).jpeg"; sourceTree = "<group>"; };
-		C4000BFF1E898AF30040F9E0 /* any (4).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "any (4).jpeg"; path = "Recursos/any (4).jpeg"; sourceTree = "<group>"; };
-		C4000C001E898AF30040F9E0 /* any.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = any.jpeg; path = Recursos/any.jpeg; sourceTree = "<group>"; };
 		C4000C071E898DFD0040F9E0 /* VCtabla.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCtabla.swift; sourceTree = "<group>"; };
 		C45230541E8125790084417F /* igalia_m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = igalia_m.jpg; path = Recursos/igalia_m.jpg; sourceTree = "<group>"; };
 		C4869FF41E81960000F2405E /* ViewControllerRegistro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistro.swift; sourceTree = "<group>"; };
 		C4869FF71E8199A200F2405E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ActividadEnClase1IOS/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4869FF91E81A23300F2405E /* DataHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataHolder.swift; path = ../DataHolder.swift; sourceTree = "<group>"; };
+		C49AAFB11E8A5800000B4A6C /* TVCMiCelda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVCMiCelda.swift; sourceTree = "<group>"; };
+		C4B9AA281E8A52430018B70B /* any1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = any1.jpeg; path = Recursos/any1.jpeg; sourceTree = "<group>"; };
+		C4B9AA291E8A52430018B70B /* any2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = any2.jpeg; path = Recursos/any2.jpeg; sourceTree = "<group>"; };
+		C4B9AA2A1E8A52430018B70B /* any3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = any3.jpeg; path = Recursos/any3.jpeg; sourceTree = "<group>"; };
+		C4B9AA2B1E8A52430018B70B /* any4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = any4.jpeg; path = Recursos/any4.jpeg; sourceTree = "<group>"; };
+		C4B9AA2C1E8A52430018B70B /* any5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = any5.jpeg; path = Recursos/any5.jpeg; sourceTree = "<group>"; };
 		C4F7F6CD1E780A3A00DD3A82 /* ActividadEnClase1IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActividadEnClase1IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F7F6D01E780A3A00DD3A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F7F6D21E780A3A00DD3A82 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
@@ -142,11 +144,11 @@
 		C4F7F6CF1E780A3A00DD3A82 /* ActividadEnClase1IOS */ = {
 			isa = PBXGroup;
 			children = (
-				C4000BFC1E898AF30040F9E0 /* any (1).jpeg */,
-				C4000BFD1E898AF30040F9E0 /* any (2).jpeg */,
-				C4000BFE1E898AF30040F9E0 /* any (3).jpeg */,
-				C4000BFF1E898AF30040F9E0 /* any (4).jpeg */,
-				C4000C001E898AF30040F9E0 /* any.jpeg */,
+				C4B9AA281E8A52430018B70B /* any1.jpeg */,
+				C4B9AA291E8A52430018B70B /* any2.jpeg */,
+				C4B9AA2A1E8A52430018B70B /* any3.jpeg */,
+				C4B9AA2B1E8A52430018B70B /* any4.jpeg */,
+				C4B9AA2C1E8A52430018B70B /* any5.jpeg */,
 				C45230541E8125790084417F /* igalia_m.jpg */,
 				C4F7F6D01E780A3A00DD3A82 /* AppDelegate.swift */,
 				C4869FF61E8199A200F2405E /* Main.storyboard */,
@@ -157,6 +159,7 @@
 				C4869FF41E81960000F2405E /* ViewControllerRegistro.swift */,
 				C4869FF91E81A23300F2405E /* DataHolder.swift */,
 				C4000C071E898DFD0040F9E0 /* VCtabla.swift */,
+				C49AAFB11E8A5800000B4A6C /* TVCMiCelda.swift */,
 			);
 			path = ActividadEnClase1IOS;
 			sourceTree = "<group>";
@@ -309,14 +312,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4F7F6DB1E780A3A00DD3A82 /* LaunchScreen.storyboard in Resources */,
+				C4B9AA301E8A52430018B70B /* any4.jpeg in Resources */,
+				C4B9AA311E8A52430018B70B /* any5.jpeg in Resources */,
+				C4B9AA2D1E8A52430018B70B /* any1.jpeg in Resources */,
 				C4F7F6D81E780A3A00DD3A82 /* Assets.xcassets in Resources */,
-				C4000C031E898AF30040F9E0 /* any (3).jpeg in Resources */,
+				C4B9AA2F1E8A52430018B70B /* any3.jpeg in Resources */,
 				C45230551E8125790084417F /* igalia_m.jpg in Resources */,
-				C4000C011E898AF30040F9E0 /* any (1).jpeg in Resources */,
-				C4000C041E898AF30040F9E0 /* any (4).jpeg in Resources */,
 				C4869FF81E8199A200F2405E /* Main.storyboard in Resources */,
-				C4000C021E898AF30040F9E0 /* any (2).jpeg in Resources */,
-				C4000C051E898AF30040F9E0 /* any.jpeg in Resources */,
+				C4B9AA2E1E8A52430018B70B /* any2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4F7F6D31E780A3A00DD3A82 /* ViewControllerLogin.swift in Sources */,
+				C49AAFB21E8A5800000B4A6C /* TVCMiCelda.swift in Sources */,
 				C4869FF51E81960000F2405E /* ViewControllerRegistro.swift in Sources */,
 				C4F7F6D11E780A3A00DD3A82 /* AppDelegate.swift in Sources */,
 				C4869FFA1E81A23300F2405E /* DataHolder.swift in Sources */,
