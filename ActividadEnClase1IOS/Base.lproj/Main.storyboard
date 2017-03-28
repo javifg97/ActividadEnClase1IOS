@@ -137,9 +137,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="J6Z-h2-0V3" kind="relationship" relationship="viewControllers" id="rsX-JY-DvY"/>
                         <segue destination="G2f-wJ-wpW" kind="relationship" relationship="viewControllers" id="HE7-tX-9Xz"/>
                         <segue destination="yIf-eJ-rV8" kind="relationship" relationship="viewControllers" id="aQt-TJ-kez"/>
-                        <segue destination="J6Z-h2-0V3" kind="relationship" relationship="viewControllers" id="rsX-JY-DvY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ibp-u9-5Ay" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -250,7 +250,7 @@
             </objects>
             <point key="canvasLocation" x="648.79999999999995" y="-788.45577211394311"/>
         </scene>
-        <!--Item-->
+        <!--Collection-->
         <scene sceneID="hqx-tu-C76">
             <objects>
                 <viewController id="J6Z-h2-0V3" customClass="VCtabla" customModule="ActividadEnClase1IOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -301,7 +301,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Nc9-Ca-GM9"/>
+                    <tabBarItem key="tabBarItem" title="Collection" id="Nc9-Ca-GM9"/>
                     <connections>
                         <outlet property="tbMiTable" destination="TUT-cZ-PSm" id="Pqx-dj-2Gh"/>
                     </connections>
