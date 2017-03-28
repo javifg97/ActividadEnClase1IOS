@@ -20,6 +20,7 @@
 		C4B9AA2F1E8A52430018B70B /* any3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4B9AA2A1E8A52430018B70B /* any3.jpeg */; };
 		C4B9AA301E8A52430018B70B /* any4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4B9AA2B1E8A52430018B70B /* any4.jpeg */; };
 		C4B9AA311E8A52430018B70B /* any5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C4B9AA2C1E8A52430018B70B /* any5.jpeg */; };
+		C4ECC09E1E8A8E0100D549D3 /* VCConexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECC09D1E8A8E0100D549D3 /* VCConexion.swift */; };
 		C4F7F6D11E780A3A00DD3A82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7F6D01E780A3A00DD3A82 /* AppDelegate.swift */; };
 		C4F7F6D31E780A3A00DD3A82 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7F6D21E780A3A00DD3A82 /* ViewControllerLogin.swift */; };
 		C4F7F6D81E780A3A00DD3A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F7F6D71E780A3A00DD3A82 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		C4B9AA2A1E8A52430018B70B /* any3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = any3.jpeg; path = Recursos/any3.jpeg; sourceTree = "<group>"; };
 		C4B9AA2B1E8A52430018B70B /* any4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = any4.jpeg; path = Recursos/any4.jpeg; sourceTree = "<group>"; };
 		C4B9AA2C1E8A52430018B70B /* any5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = any5.jpeg; path = Recursos/any5.jpeg; sourceTree = "<group>"; };
+		C4ECC09D1E8A8E0100D549D3 /* VCConexion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCConexion.swift; sourceTree = "<group>"; };
 		C4F7F6CD1E780A3A00DD3A82 /* ActividadEnClase1IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActividadEnClase1IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F7F6D01E780A3A00DD3A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F7F6D21E780A3A00DD3A82 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				C4869FF91E81A23300F2405E /* DataHolder.swift */,
 				C4000C071E898DFD0040F9E0 /* VCtabla.swift */,
 				C49AAFB11E8A5800000B4A6C /* TVCMiCelda.swift */,
+				C4ECC09D1E8A8E0100D549D3 /* VCConexion.swift */,
 			);
 			path = ActividadEnClase1IOS;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				C49AAFB21E8A5800000B4A6C /* TVCMiCelda.swift in Sources */,
 				C4869FF51E81960000F2405E /* ViewControllerRegistro.swift in Sources */,
 				C4F7F6D11E780A3A00DD3A82 /* AppDelegate.swift in Sources */,
+				C4ECC09E1E8A8E0100D549D3 /* VCConexion.swift in Sources */,
 				C4869FFA1E81A23300F2405E /* DataHolder.swift in Sources */,
 				C4000C081E898DFD0040F9E0 /* VCtabla.swift in Sources */,
 			);

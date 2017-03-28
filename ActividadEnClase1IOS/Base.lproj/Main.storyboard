@@ -83,6 +83,64 @@
             </objects>
             <point key="canvasLocation" x="-201" y="-788"/>
         </scene>
+        <!--Collection-->
+        <scene sceneID="Lja-Sv-84s">
+            <objects>
+                <viewController id="lCK-wX-H03" customClass="VCConexion" customModule="ActividadEnClase1IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v0P-9B-57N"/>
+                        <viewControllerLayoutGuide type="bottom" id="GOx-QZ-S57"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gY3-3O-WFz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MhE-oU-y1c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vmh-yK-sAT">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="micelda2" id="vqP-4Q-gcp">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="argsfg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2X8-IK-0om">
+                                                    <rect key="frame" x="23" y="36" width="55" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="lCK-wX-H03" id="2Nk-oJ-mk0"/>
+                                    <outlet property="delegate" destination="lCK-wX-H03" id="SWx-fk-uq9"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Collection" id="s61-Ib-iok"/>
+                    <connections>
+                        <outlet property="ColCollection" destination="MhE-oU-y1c" id="hLq-Aa-KEL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bea-VB-AWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1709.5999999999999" y="184.85757121439281"/>
+        </scene>
         <!--Item 2-->
         <scene sceneID="KbF-gm-kaw">
             <objects>
@@ -108,25 +166,6 @@
             </objects>
             <point key="canvasLocation" x="2116" y="1015.1424287856073"/>
         </scene>
-        <!--Item 1-->
-        <scene sceneID="Uos-vn-LBg">
-            <objects>
-                <viewController id="G2f-wJ-wpW" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4IQ-yr-aXC"/>
-                        <viewControllerLayoutGuide type="bottom" id="SxZ-cR-b82"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Nlt-im-arf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Hzp-bS-s5a"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7rs-16-J0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1730" y="230"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="RW7-nk-BrL">
             <objects>
@@ -138,7 +177,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="J6Z-h2-0V3" kind="relationship" relationship="viewControllers" id="rsX-JY-DvY"/>
-                        <segue destination="G2f-wJ-wpW" kind="relationship" relationship="viewControllers" id="HE7-tX-9Xz"/>
+                        <segue destination="lCK-wX-H03" kind="relationship" relationship="viewControllers" id="ZRQ-NJ-G0d"/>
                         <segue destination="yIf-eJ-rV8" kind="relationship" relationship="viewControllers" id="aQt-TJ-kez"/>
                     </connections>
                 </tabBarController>
@@ -250,7 +289,7 @@
             </objects>
             <point key="canvasLocation" x="648.79999999999995" y="-788.45577211394311"/>
         </scene>
-        <!--Collection-->
+        <!--Tabla-->
         <scene sceneID="hqx-tu-C76">
             <objects>
                 <viewController id="J6Z-h2-0V3" customClass="VCtabla" customModule="ActividadEnClase1IOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -271,7 +310,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ps5-Xc-ejn" id="O2g-vw-EYy">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h63-bj-Iuc">
@@ -301,7 +340,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Collection" id="Nc9-Ca-GM9"/>
+                    <tabBarItem key="tabBarItem" title="Tabla" id="Nc9-Ca-GM9"/>
                     <connections>
                         <outlet property="tbMiTable" destination="TUT-cZ-PSm" id="Pqx-dj-2Gh"/>
                     </connections>
