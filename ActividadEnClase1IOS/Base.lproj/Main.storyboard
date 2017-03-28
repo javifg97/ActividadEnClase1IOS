@@ -100,28 +100,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vmh-yK-sAT">
-                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="itemSize" width="166" height="196"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="micelda2" id="vqP-4Q-gcp">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="micelda2" id="vqP-4Q-gcp" customClass="CVCMiCelda" customModule="ActividadEnClase1IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="196"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="166" height="196"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="argsfg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2X8-IK-0om">
-                                                    <rect key="frame" x="23" y="36" width="55" height="28"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2X8-IK-0om">
+                                                    <rect key="frame" x="0.0" y="122" width="166" height="74"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3cb-vu-JQA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="166" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="lblImageCell" destination="3cb-vu-JQA" id="zif-E6-4Or"/>
+                                            <outlet property="lblTextoCell" destination="2X8-IK-0om" id="6ol-Vf-pIa"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -139,12 +147,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bea-VB-AWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1709.5999999999999" y="184.85757121439281"/>
+            <point key="canvasLocation" x="1708" y="183.95802098950526"/>
         </scene>
-        <!--Item 2-->
+        <!--Mapa-->
         <scene sceneID="KbF-gm-kaw">
             <objects>
-                <viewController id="yIf-eJ-rV8" sceneMemberID="viewController">
+                <viewController id="yIf-eJ-rV8" customClass="Maps" customModule="ActividadEnClase1IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7I7-TZ-fCf"/>
                         <viewControllerLayoutGuide type="bottom" id="eil-My-SXv"/>
@@ -153,14 +161,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JPd-jT-CJd">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JPd-jT-CJd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JPd-jT-CJd" firstAttribute="top" secondItem="wjr-cG-mo4" secondAttribute="top" id="7Sr-QJ-hbc"/>
+                            <constraint firstAttribute="trailing" secondItem="JPd-jT-CJd" secondAttribute="trailing" id="ErU-cw-Pnh"/>
+                            <constraint firstItem="eil-My-SXv" firstAttribute="top" secondItem="JPd-jT-CJd" secondAttribute="bottom" id="MmN-bf-maw"/>
+                            <constraint firstItem="JPd-jT-CJd" firstAttribute="leading" secondItem="wjr-cG-mo4" secondAttribute="leading" id="lik-HM-Wsh"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="6XR-au-Tch"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" id="6XR-au-Tch"/>
+                    <connections>
+                        <outlet property="maps" destination="JPd-jT-CJd" id="9W7-Fi-WZt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MsT-2m-eAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

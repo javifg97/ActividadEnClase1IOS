@@ -10,6 +10,9 @@
 		79B4DD54892A1764D0DE6E85 /* Pods_ActividadEnClase1IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BE45C0708F58CDF1AC5E18 /* Pods_ActividadEnClase1IOS.framework */; };
 		BE63665B2D2768A915FBEE21 /* Pods_ActividadEnClase1IOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85B759506C7C72FDF2AADA1 /* Pods_ActividadEnClase1IOSUITests.framework */; };
 		C4000C081E898DFD0040F9E0 /* VCtabla.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4000C071E898DFD0040F9E0 /* VCtabla.swift */; };
+		C405D6EF1E8ABF18008AD570 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C405D6EE1E8ABF18008AD570 /* Maps.swift */; };
+		C4067AE31E8AB33100F9C7F4 /* CVCMiCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4067AE21E8AB33100F9C7F4 /* CVCMiCelda.swift */; };
+		C4067AE51E8ABD9A00F9C7F4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4067AE41E8ABD9A00F9C7F4 /* MapKit.framework */; };
 		C45230551E8125790084417F /* igalia_m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C45230541E8125790084417F /* igalia_m.jpg */; };
 		C4869FF51E81960000F2405E /* ViewControllerRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4869FF41E81960000F2405E /* ViewControllerRegistro.swift */; };
 		C4869FF81E8199A200F2405E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4869FF61E8199A200F2405E /* Main.storyboard */; };
@@ -55,6 +58,9 @@
 		6096D921E752AE002C483D60 /* Pods-ActividadEnClase1IOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActividadEnClase1IOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActividadEnClase1IOSUITests/Pods-ActividadEnClase1IOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		857104F05CB510824CD15285 /* Pods-ActividadEnClase1IOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActividadEnClase1IOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActividadEnClase1IOSTests/Pods-ActividadEnClase1IOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		C4000C071E898DFD0040F9E0 /* VCtabla.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCtabla.swift; sourceTree = "<group>"; };
+		C405D6EE1E8ABF18008AD570 /* Maps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
+		C4067AE21E8AB33100F9C7F4 /* CVCMiCelda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCMiCelda.swift; sourceTree = "<group>"; };
+		C4067AE41E8ABD9A00F9C7F4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C45230541E8125790084417F /* igalia_m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = igalia_m.jpg; path = Recursos/igalia_m.jpg; sourceTree = "<group>"; };
 		C4869FF41E81960000F2405E /* ViewControllerRegistro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistro.swift; sourceTree = "<group>"; };
 		C4869FF71E8199A200F2405E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ActividadEnClase1IOS/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4067AE51E8ABD9A00F9C7F4 /* MapKit.framework in Frameworks */,
 				79B4DD54892A1764D0DE6E85 /* Pods_ActividadEnClase1IOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +121,7 @@
 		98E505CE5B33DE43BC55DEED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4067AE41E8ABD9A00F9C7F4 /* MapKit.framework */,
 				32BE45C0708F58CDF1AC5E18 /* Pods_ActividadEnClase1IOS.framework */,
 				D2EEC8653D24EF1F38B8CB5F /* Pods_ActividadEnClase1IOSTests.framework */,
 				E85B759506C7C72FDF2AADA1 /* Pods_ActividadEnClase1IOSUITests.framework */,
@@ -163,6 +171,8 @@
 				C4000C071E898DFD0040F9E0 /* VCtabla.swift */,
 				C49AAFB11E8A5800000B4A6C /* TVCMiCelda.swift */,
 				C4ECC09D1E8A8E0100D549D3 /* VCConexion.swift */,
+				C4067AE21E8AB33100F9C7F4 /* CVCMiCelda.swift */,
+				C405D6EE1E8ABF18008AD570 /* Maps.swift */,
 			);
 			path = ActividadEnClase1IOS;
 			sourceTree = "<group>";
@@ -276,6 +286,11 @@
 					C4F7F6CC1E780A3A00DD3A82 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					C4F7F6E01E780A3A00DD3A82 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -487,10 +502,12 @@
 			files = (
 				C4F7F6D31E780A3A00DD3A82 /* ViewControllerLogin.swift in Sources */,
 				C49AAFB21E8A5800000B4A6C /* TVCMiCelda.swift in Sources */,
+				C405D6EF1E8ABF18008AD570 /* Maps.swift in Sources */,
 				C4869FF51E81960000F2405E /* ViewControllerRegistro.swift in Sources */,
 				C4F7F6D11E780A3A00DD3A82 /* AppDelegate.swift in Sources */,
 				C4ECC09E1E8A8E0100D549D3 /* VCConexion.swift in Sources */,
 				C4869FFA1E81A23300F2405E /* DataHolder.swift in Sources */,
+				C4067AE31E8AB33100F9C7F4 /* CVCMiCelda.swift in Sources */,
 				C4000C081E898DFD0040F9E0 /* VCtabla.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
