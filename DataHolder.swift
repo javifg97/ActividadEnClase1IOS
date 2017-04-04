@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class DataHolder: NSObject {
+    
+    func initFirebase(){
+        FIRApp.configure()
+        
+    }
 
     static let sharedInstance:DataHolder=DataHolder()
     

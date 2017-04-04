@@ -30,6 +30,8 @@ class ViewControllerLogin: UIViewController {
         if (txtfUser?.text == DataHolder.sharedInstance.sNomUser && txtfPass?.text == DataHolder.sharedInstance.sPass) {
             self.performSegue(withIdentifier: "LogCorrecto", sender: self)
         }
+        
+
     }
 
 }

@@ -46,6 +46,9 @@ class ViewControllerRegistro: UIViewController {
             DataHolder.sharedInstance.sPass = txtfNPass?.text
             self.performSegue(withIdentifier: "RegCorrecto", sender: self)
         }
+        /*FIRAuth.auth()?.createUser(withEmail: (txtfNUser?.text)!, password: (txtfNPass?.text)!) { (user, error) in
+            // ...
+        }*/
     }
 
 }
