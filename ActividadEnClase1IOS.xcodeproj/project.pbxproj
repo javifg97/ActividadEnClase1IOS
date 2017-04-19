@@ -13,7 +13,7 @@
 		C405D6EF1E8ABF18008AD570 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C405D6EE1E8ABF18008AD570 /* Maps.swift */; };
 		C4067AE31E8AB33100F9C7F4 /* CVCMiCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4067AE21E8AB33100F9C7F4 /* CVCMiCelda.swift */; };
 		C4067AE51E8ABD9A00F9C7F4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4067AE41E8ABD9A00F9C7F4 /* MapKit.framework */; };
-		C43478BE1E93F7F800970E95 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = C43478BD1E93F7F800970E95 /* GoogleService-Info (1).plist */; };
+		C43478BE1E93F7F800970E95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C43478BD1E93F7F800970E95 /* GoogleService-Info.plist */; };
 		C45230551E8125790084417F /* igalia_m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C45230541E8125790084417F /* igalia_m.jpg */; };
 		C4869FF51E81960000F2405E /* ViewControllerRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4869FF41E81960000F2405E /* ViewControllerRegistro.swift */; };
 		C4869FF81E8199A200F2405E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4869FF61E8199A200F2405E /* Main.storyboard */; };
@@ -62,7 +62,7 @@
 		C405D6EE1E8ABF18008AD570 /* Maps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		C4067AE21E8AB33100F9C7F4 /* CVCMiCelda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCMiCelda.swift; sourceTree = "<group>"; };
 		C4067AE41E8ABD9A00F9C7F4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		C43478BD1E93F7F800970E95 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		C43478BD1E93F7F800970E95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C45230541E8125790084417F /* igalia_m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = igalia_m.jpg; path = Recursos/igalia_m.jpg; sourceTree = "<group>"; };
 		C4869FF41E81960000F2405E /* ViewControllerRegistro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistro.swift; sourceTree = "<group>"; };
 		C4869FF71E8199A200F2405E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ActividadEnClase1IOS/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 				C4ECC09D1E8A8E0100D549D3 /* VCConexion.swift */,
 				C4067AE21E8AB33100F9C7F4 /* CVCMiCelda.swift */,
 				C405D6EE1E8ABF18008AD570 /* Maps.swift */,
-				C43478BD1E93F7F800970E95 /* GoogleService-Info (1).plist */,
+				C43478BD1E93F7F800970E95 /* GoogleService-Info.plist */,
 			);
 			path = ActividadEnClase1IOS;
 			sourceTree = "<group>";
@@ -339,7 +339,7 @@
 				C4F7F6D81E780A3A00DD3A82 /* Assets.xcassets in Resources */,
 				C4B9AA2F1E8A52430018B70B /* any3.jpeg in Resources */,
 				C45230551E8125790084417F /* igalia_m.jpg in Resources */,
-				C43478BE1E93F7F800970E95 /* GoogleService-Info (1).plist in Resources */,
+				C43478BE1E93F7F800970E95 /* GoogleService-Info.plist in Resources */,
 				C4869FF81E8199A200F2405E /* Main.storyboard in Resources */,
 				C4B9AA2E1E8A52430018B70B /* any2.jpeg in Resources */,
 			);

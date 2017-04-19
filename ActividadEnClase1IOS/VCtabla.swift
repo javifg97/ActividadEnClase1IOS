@@ -31,6 +31,8 @@ class VCtabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:TVCMiCelda = tableView.dequeueReusableCell(withIdentifier: "miCelda1")as! TVCMiCelda
+        
+        
         cell.lblNombre?.text = DataHolder.sharedInstance.arrNombresCelda[indexPath.row]
         cell.imgPerfil?.image = DataHolder.sharedInstance.arrImgCeldas[indexPath.row]
         return cell
