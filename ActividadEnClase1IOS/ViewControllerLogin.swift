@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewControllerLogin: UIViewController {
 
@@ -27,9 +28,22 @@ class ViewControllerLogin: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func accionBtnLog(){
-        if (txtfUser?.text == DataHolder.sharedInstance.sNomUser && txtfPass?.text == DataHolder.sharedInstance.sPass) {
-            self.performSegue(withIdentifier: "LogCorrecto", sender: self)
+        FIRAuth.auth()?.signIn(withEmail: (txtfUser?.text)!, password: (txtfPass?.text)!){ (user, error) in
+        
+            if(error == nil){
+                self.performSegue(withIdentifier: "LogCorrecto", sender: self)
+            }
+            else{
+            print("error log", error)
+            }
         }
+        
+            
+            
+        
+            
+            
+        
         
 
     }

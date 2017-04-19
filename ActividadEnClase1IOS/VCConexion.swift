@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class VCConexion: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -17,6 +19,26 @@ class VCConexion: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DataHolder.sharedInstance.firDataBaseRef.child("Nombre").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let arTemp  =  snapshot.value as? Array<AnyObject>
+            
+            
+            DataHolder.sharedInstance.arrNombresCelda=Array<Usuario>()
+            
+            
+            for us in arTemp! as [AnyObject]{
+                let user = Usuario(valores: us as! [String:AnyObject])
+                DataHolder.sharedInstance.arrNombresCelda?.append(user)
+                
+            }
+            
+            self.ColCollection?.reloadData()
+            
+            
+            
+        })
 
         // Do any additional setup after loading the view.
     }
@@ -27,11 +49,19 @@ class VCConexion: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return DataHolder.sharedInstance.arrNombresCelda.count
+        if (DataHolder.sharedInstance.arrNombresCelda==nil) {
+            return 0
+        }
+        else{
+            return (DataHolder.sharedInstance.arrNombresCelda?.count)!}
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:CVCMiCelda=collectionView.dequeueReusableCell(withReuseIdentifier: "micelda2", for: indexPath) as! CVCMiCelda
-        cell.lblTextoCell?.text=DataHolder.sharedInstance.arrNombresCelda[indexPath.row]
+        
+        
+        let user:Usuario = DataHolder.sharedInstance.arrNombresCelda![indexPath.row]
+        
+        cell.lblTextoCell?.text=user.sNombre
         cell.lblImageCell?.image=DataHolder.sharedInstance.arrImgCeldas[indexPath.row]
         return cell
     }

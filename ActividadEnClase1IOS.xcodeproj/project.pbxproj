@@ -15,6 +15,7 @@
 		C4067AE51E8ABD9A00F9C7F4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4067AE41E8ABD9A00F9C7F4 /* MapKit.framework */; };
 		C43478BE1E93F7F800970E95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C43478BD1E93F7F800970E95 /* GoogleService-Info.plist */; };
 		C45230551E8125790084417F /* igalia_m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C45230541E8125790084417F /* igalia_m.jpg */; };
+		C47967521EA7D229005A5151 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47967511EA7D229005A5151 /* Usuario.swift */; };
 		C4869FF51E81960000F2405E /* ViewControllerRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4869FF41E81960000F2405E /* ViewControllerRegistro.swift */; };
 		C4869FF81E8199A200F2405E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4869FF61E8199A200F2405E /* Main.storyboard */; };
 		C4869FFA1E81A23300F2405E /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4869FF91E81A23300F2405E /* DataHolder.swift */; };
@@ -64,6 +65,7 @@
 		C4067AE41E8ABD9A00F9C7F4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C43478BD1E93F7F800970E95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C45230541E8125790084417F /* igalia_m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = igalia_m.jpg; path = Recursos/igalia_m.jpg; sourceTree = "<group>"; };
+		C47967511EA7D229005A5151 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		C4869FF41E81960000F2405E /* ViewControllerRegistro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistro.swift; sourceTree = "<group>"; };
 		C4869FF71E8199A200F2405E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ActividadEnClase1IOS/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4869FF91E81A23300F2405E /* DataHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataHolder.swift; path = ../DataHolder.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				C4067AE21E8AB33100F9C7F4 /* CVCMiCelda.swift */,
 				C405D6EE1E8ABF18008AD570 /* Maps.swift */,
 				C43478BD1E93F7F800970E95 /* GoogleService-Info.plist */,
+				C47967511EA7D229005A5151 /* Usuario.swift */,
 			);
 			path = ActividadEnClase1IOS;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				C4ECC09E1E8A8E0100D549D3 /* VCConexion.swift in Sources */,
 				C4869FFA1E81A23300F2405E /* DataHolder.swift in Sources */,
 				C4067AE31E8AB33100F9C7F4 /* CVCMiCelda.swift in Sources */,
+				C47967521EA7D229005A5151 /* Usuario.swift in Sources */,
 				C4000C081E898DFD0040F9E0 /* VCtabla.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class VCtabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -14,6 +16,27 @@ class VCtabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+            DataHolder.sharedInstance.firDataBaseRef.child("Nombre").observeSingleEvent(of: .value, with: { (snapshot) in
+                
+                let arTemp  =  snapshot.value as? Array<AnyObject>
+                
+                
+                    DataHolder.sharedInstance.arrNombresCelda=Array<Usuario>()
+                
+                
+                for us in arTemp! as [AnyObject]{
+                    let user = Usuario(valores: us as! [String:AnyObject])
+                    DataHolder.sharedInstance.arrNombresCelda?.append(user)
+                    
+                }
+                
+                self.tbMiTable?.reloadData()
+                
+                
+
+        })
 
         // Do any additional setup after loading the view.
     }
@@ -25,7 +48,13 @@ class VCtabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataHolder.sharedInstance.arrNombresCelda.count
+        if (DataHolder.sharedInstance.arrNombresCelda==nil) {
+            return 0
+        }
+        else{
+            return (DataHolder.sharedInstance.arrNombresCelda?.count)!}
+        
+        
     }
     
     
@@ -33,8 +62,10 @@ class VCtabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let cell:TVCMiCelda = tableView.dequeueReusableCell(withIdentifier: "miCelda1")as! TVCMiCelda
         
         
-        cell.lblNombre?.text = DataHolder.sharedInstance.arrNombresCelda[indexPath.row]
-        cell.imgPerfil?.image = DataHolder.sharedInstance.arrImgCeldas[indexPath.row]
+        let user:Usuario = DataHolder.sharedInstance.arrNombresCelda![indexPath.row]
+        
+        cell.lblNombre?.text = user.sNombre
+        //cell.imgPerfil?.image = DataHolder.sharedInstance.arrImgCeldas[indexPath.row]
         return cell
     }
     

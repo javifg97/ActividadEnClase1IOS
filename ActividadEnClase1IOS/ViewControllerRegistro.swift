@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewControllerRegistro: UIViewController {
 
@@ -40,15 +41,21 @@ class ViewControllerRegistro: UIViewController {
     }
     */
     @IBAction func AceptarRegistro(){
-        let aux:String=""
-        if (!(txtfNUser?.text == aux) && txtfNPass?.text == txtfNPassCon?.text && !(txtfNEmail?.text == aux)) {
-            DataHolder.sharedInstance.sNomUser = txtfNUser?.text
-            DataHolder.sharedInstance.sPass = txtfNPass?.text
-            self.performSegue(withIdentifier: "RegCorrecto", sender: self)
+        if (self.txtfNPass?.text == self.txtfNPassCon?.text) {
+            FIRAuth.auth()?.createUser(withEmail: (txtfNEmail?.text)!, password: (txtfNPass?.text)!){ (user, error) in
+                
+                if (error==nil){
+                    self.performSegue(withIdentifier: "RegCorrecto", sender: self)
+                    
+                }
+                else{
+                    print("Error registro", error)
+                }
+            }
         }
-        /*FIRAuth.auth()?.createUser(withEmail: (txtfNUser?.text)!, password: (txtfNPass?.text)!) { (user, error) in
-            // ...
-        }*/
+        
+        
+       
     }
 
 }
