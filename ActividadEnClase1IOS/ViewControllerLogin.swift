@@ -31,10 +31,12 @@ class ViewControllerLogin: UIViewController {
         FIRAuth.auth()?.signIn(withEmail: (txtfUser?.text)!, password: (txtfPass?.text)!){ (user, error) in
         
             if(error == nil){
+                DataHolder.sharedInstance.usuario = user
+                print(DataHolder.sharedInstance.usuario?.displayName)
                 self.performSegue(withIdentifier: "LogCorrecto", sender: self)
             }
             else{
-            print("error log", error)
+            print("error log", error!)
             }
         }
         

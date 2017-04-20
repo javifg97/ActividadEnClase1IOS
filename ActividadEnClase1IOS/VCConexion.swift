@@ -62,7 +62,7 @@ class VCConexion: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         let user:Usuario = DataHolder.sharedInstance.arrNombresCelda![indexPath.row]
         
         cell.lblTextoCell?.text=user.sNombre
-        cell.lblImageCell?.image=DataHolder.sharedInstance.arrImgCeldas[indexPath.row]
+        //cell.lblImageCell?.image=DataHolder.sharedInstance.arrImgCeldas[indexPath.row]
         return cell
     }
 

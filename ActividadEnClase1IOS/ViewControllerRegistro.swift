@@ -45,7 +45,17 @@ class ViewControllerRegistro: UIViewController {
             FIRAuth.auth()?.createUser(withEmail: (txtfNEmail?.text)!, password: (txtfNPass?.text)!){ (user, error) in
                 
                 if (error==nil){
-                    self.performSegue(withIdentifier: "RegCorrecto", sender: self)
+                    DataHolder.sharedInstance.usuario=user
+                    let changeRequest = FIRAuth.auth()?.currentUser?.profileChangeRequest()
+                    changeRequest?.displayName = self.txtfNUser?.text
+                    changeRequest?.commitChanges() { (error) in
+                        if(error==nil){
+                            self.performSegue(withIdentifier: "RegCorrecto", sender: self)
+                        }
+                    }
+                    
+                    
+                    
                     
                 }
                 else{
