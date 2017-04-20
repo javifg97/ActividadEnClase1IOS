@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class TVCMiCelda: UITableViewCell {
     
@@ -23,6 +24,19 @@ class TVCMiCelda: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func descargarImagen(ruta:String){
+        let isLandRef = DataHolder.sharedInstance.firstorageRef?.child(ruta)
+        
+        isLandRef?.data(withMaxSize: 1*1024*1024){ data,error in
+            if error != nil {
+                
+            }
+            else{
+                let image = UIImage(data:data!)
+                self.imgPerfil?.image = image
+            }
+        }
     }
 
 }

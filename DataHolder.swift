@@ -10,15 +10,20 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 import FirebaseAuth
+import FirebaseStorage
 
 class DataHolder: NSObject {
     
     var firDataBaseRef:FIRDatabaseReference!
     var locationAdmin:LocationAdmin?
+    var firStorage:FIRStorage?
+    var firstorageRef:FIRStorageReference?
     
     func initFirebase(){
         FIRApp.configure()
         firDataBaseRef = FIRDatabase.database().reference()
+        firStorage = FIRStorage.storage()
+        firstorageRef = firStorage?.reference()
         
     }
     func initLocationAdmin (){

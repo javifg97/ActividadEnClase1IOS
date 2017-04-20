@@ -65,7 +65,7 @@ class VCtabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let user:Usuario = DataHolder.sharedInstance.arrNombresCelda![indexPath.row]
         
         cell.lblNombre?.text = user.sNombre
-        //cell.imgPerfil?.image = DataHolder.sharedInstance.arrImgCeldas[indexPath.row]
+        cell.descargarImagen(ruta: user.sRutaImagenCel!)
         return cell
     }
     

@@ -11,12 +11,14 @@ import UIKit
 class Usuario: NSObject {
     
     var sNombre:String?
-    var fLat:Float?
-    var fLong:Float?
+    var dbLat:Double?
+    var dbLong:Double?
+    var sRutaImagenCel:String?
 
     init(valores:[String:AnyObject]) {
         sNombre = valores["Nombre"] as? String
-        fLat = valores["Latitud"] as? Float
-        fLong = valores["Longitud"] as? Float
+        dbLat = valores["Latitud"] as? Double
+        dbLong = valores["Longitud"] as? Double
+        sRutaImagenCel = valores["RutaImagenCel"] as? String
     }
 }
